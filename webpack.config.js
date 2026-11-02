@@ -60,9 +60,9 @@ module.exports = {
         new MiniCSSExtractPlugin({
             filename: 'style.css',
         }),
-        //new HTMLWebpackPlugin({
-        //    filename: 'index.html',
-        //    template: './index.html'
-       // })
+        new HTMLWebpackPlugin({
+        filename: 'index.html',
+        template: './index.html'
+       })
     ]
 };
