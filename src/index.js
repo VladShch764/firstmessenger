@@ -37,7 +37,7 @@ function renderMessages() {
     history.innerText = '';
     loadMessages().forEach((text) => {
         const div = document.createElement('div');
-        div.className = 'massage';
+        div.className = 'historymsg';
         div.innerText = text;
         history.appendChild(div);
     });
