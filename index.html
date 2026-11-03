@@ -2,6 +2,7 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Учебный мессенджер Влад</title>
         <link rel="stylesheet" href="index.css">
     <link href="style.css" rel="stylesheet"></head>
@@ -13,11 +14,12 @@
         <form class="form" action="/">
             <div class="message">История сообщений</div>
             <div class="history"></div>
-            <input class="form-input" name="message-text" placeholder="Введите сообщение" type="text">
-            <button type="submit" >Отправить</button>
-            <button type="button" class="clear-btn">Очистить историю</button>
+            <textarea class="texteria" name="message-text" rows="3" placeholder="Введите сообщение (Enter-отправить, Ctrl+Enter-новая строка)"></textarea>
+    <div class="controls">
+        <button type="submit">Отправить</button>
+        <button type="button" class="clear-btn">Очистить историю</button>
+    </div>
         </form>
         <script type="module" src="./index.js"></script>
-           
     <script type="text/javascript" src="bundle.js"></script></body>
 </html>
