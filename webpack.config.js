@@ -1,10 +1,8 @@
 'use strict';
 
 const path = require('path');
-
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
 const SRC_PATH = path.resolve(__dirname, 'src');
 const BUILD_PATH = path.resolve(__dirname, 'build');
@@ -54,6 +52,18 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif|svg|webp)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'img/[name].[ext]',
+                            outputPath: 'img'
+                        }
+                    }
+                ]
+            }
         ],
     },
     plugins: [
@@ -61,8 +71,8 @@ module.exports = {
             filename: 'style.css',
         }),
         new HTMLWebpackPlugin({
-        filename: 'index.html',
-        template: './index.html'
-       })
+            filename: 'index.html',
+            template: './index.html'
+        })
     ]
 };
