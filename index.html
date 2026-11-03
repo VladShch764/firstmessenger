@@ -3,53 +3,13 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>Учебный мессенджер Влад</title>
+        <link rel="stylesheet" href="index.css">
     <link href="style.css" rel="stylesheet"></head>
     <body>
-        <style>
-            .form {
-                width: 100%;
-                display: inline-block;
-               /* border: 1px solid rgba(25, 25, 25, 0.32); */
-            }
+        <header class= "pages-header">
+            <h1>Новый мессенджер</h1>
+        </header>
 
-            .message {
-                color: black;
-                border: 1px solid; 
-                border-radius: 4px;
-                margin: 4px 0;
-                padding: 4px;
-            }
-
-            .history {
-                color: black;
-                /* border: 1px solid; */
-                border-radius: 4px;
-                margin: 4px 0;
-                padding: 4px;
-            }
-
-            button {
-                display: block;
-                width: 100%;
-                border: none;
-                border-radius: 4px;
-                padding: 8px;
-                margin-top: 4px;
-                background: #007bff;
-                color: #fff;
-                cursor: pointer;
-              }
-
-            button:hover {
-                background: #0069d9;
-               }
-
-            input {
-                border: 1px solid rgba(25, 25, 25, 0.32);
-                outline: none;
-                width: calc(100% - 2px);
-            }
-        </style>
         <form class="form" action="/">
             <div class="message">История сообщений</div>
             <div class="history"></div>
